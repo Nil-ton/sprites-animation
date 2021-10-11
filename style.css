@@ -1,0 +1,95 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+.sprite-idle{
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Idle.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: sprite-idle 1s infinite steps(10);
+}
+
+@keyframes sprite-idle {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1200px;
+  }
+}
+
+.sprite-run-right {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Run.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: sprite-run 1s infinite steps(10);
+}
+
+.sprite-run-left {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Run.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: sprite-run 1s infinite steps(10);
+  transform: scaleX(-1);
+}
+
+@keyframes sprite-run {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1200px;
+  }
+}
+
+
+.sprite-attack {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Attack.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: attack 1s steps(4) infinite;
+}
+
+@keyframes attack {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -480px;
+  }
+}
+
+.sprite-attack-2 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Attack2.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: attack-2 1s steps(4) infinite;
+}
+
+@keyframes attack-2 {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -480px;
+  }
+}
+
