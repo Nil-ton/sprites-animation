@@ -5,7 +5,7 @@ div {
   height: 98vh;
 }
 
-.sprite-idle{
+.sprite-idle-right{
   display: flex;
   justify-content: center;
   background-image: url(./sprites/_Idle.png);
@@ -13,6 +13,17 @@ div {
   height: 80px;
   background-repeat: no-repeat;
   animation: sprite-idle 1s infinite steps(10);
+}
+
+.sprite-idle-left{
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Idle.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: sprite-idle 1s infinite steps(10);
+  transform: scaleX(-1);
 }
 
 @keyframes sprite-idle {
@@ -55,7 +66,7 @@ div {
 }
 
 
-.sprite-attack {
+.sprite-attack-right {
   display: flex;
   justify-content: center;
   background-image: url(./sprites/_Attack.png);
@@ -63,6 +74,17 @@ div {
   height: 80px;
   background-repeat: no-repeat;
   animation: attack 1s steps(4) infinite;
+}
+
+.sprite-attack-left {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Attack.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: attack 1s steps(4) infinite;
+  transform: scaleX(-1);
 }
 
 @keyframes attack {
@@ -74,7 +96,7 @@ div {
   }
 }
 
-.sprite-attack-2 {
+.sprite-attack-2-right {
   display: flex;
   justify-content: center;
   background-image: url(./sprites/_Attack2.png);
@@ -82,6 +104,17 @@ div {
   height: 80px;
   background-repeat: no-repeat;
   animation: attack-2 1s steps(4) infinite;
+}
+
+.sprite-attack-2-left {
+  display: flex;
+  justify-content: center;
+  background-image: url(./sprites/_Attack2.png);
+  width: 120px;
+  height: 80px;
+  background-repeat: no-repeat;
+  animation: attack-2 1s steps(4) infinite;
+  transform: scaleX(-1);
 }
 
 @keyframes attack-2 {
